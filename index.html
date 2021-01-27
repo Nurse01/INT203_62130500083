@@ -3,13 +3,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <title>Basic Vue Js - HelloWorld App</title>
 
     <!-- https://google.github.io/material-design-icons/#icon-font-for-the-web -->
-
     <!-- Using via Google Web Fonts -->
 
     <link
@@ -18,36 +15,65 @@
     />
 
     <!-- https://tailwindcss.com/docs/installation -->
-
     <!-- Using Tailwind via CDN -->
-
     <link
       href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
       rel="stylesheet"
     />
 
     <!-- https://v3.vuejs.org/guide/installation.html#release-notes -->
-
     <!-- Vue CDN -->
 
     <script src="https://unpkg.com/vue@next"></script>
   </head>
 
   <body>
-    <div
-      id="app"
-      class="h-screen w-full bg-gray-200 flex items-start justify-start">
-      <img src="./images/1.jpg" class="w-1/3 h-full" />
-
-      <div class="w-full flex items-center justify-end">
-        <i class="material-icons">face</i>
-
-        <p class="font-semibold text-xl tracking-wider uppercase px-3">{{ msg }}</p>
+    <div id="app" class="font-sans">
+      <div
+        id="pre-header"
+        class="text-white flex flex-row flex bg-blue-400 h-auto"
+      >
+        <div class="hover:bg-white hover:text-blue-400">Hostels</div>
+        <div class="hover:bg-white hover:text-blue-400">Members</div>
+        <div class="hover:bg-white hover:text-blue-400">E-magazine</div>
+        <div class="flex flex-row flex justify-end">
+          <div class="hover:bg-white hover:text-blue-400">ENG</div>
+          <div class="hover:bg-white hover:text-blue-400">SLO</div>
+        </div>
+      </div>
+      <div>
+        <p class="text-3xl text-blue-400">
+          List of travellers journals: Switzerland
+        </p>
+      </div>
+      <div id="drop-down">
+        <select
+          name="countries"
+          id="countries"
+          class="focus:outline-none focus:ring focus:border-blue-300"
+        >
+          <option value="sweden">Sweden</option>
+          <option value="switzerland">Switzerland</option>
+          <option value="taiwan">Taiwan</option>
+          <option value="tanzania">Tanzania</option>
+          <option value="thailand">thailand</option>
+          <option value="turkey">Turkey</option>
+        </select>
+        <br />
+        <br />
+      </div>
+      <div id="content"class="box-content bg-auto flex justify-center flex flex-wrap ">    
+          <img src="images/sw-1.jpg" class="hover:shadow-2xl hover:border-100 pb-80  "/>
+          <img src="images/sw-2.jpg" class="hover:shadow-2xl hover:border-100 pb-80 "/>   
+          <img src="images/sw-3.jpg" class="hover:shadow-2xl hover:border-100 pb-80"/>   
+          <img src="images/sw-4.jpg" class="hover:shadow-2xl hover:border-100 pb-80 "/> 
+          <img src="images/sw-5.jpg" class="hover:shadow-2xl hover:border-100 pb-80"/>   
+          <img src="images/sw-6.jpg" class="hover:shadow-2xl hover:border-100 pb-80 "/>            
+       
       </div>
     </div>
 
     <!-- my main.js -->
-
     <script src="main.js"></script>
   </body>
 </html>
