@@ -22,39 +22,46 @@
   <script src="https://unpkg.com/vue@next"></script>
 
   <style>
-    :root{
-     --non-pic-border: rgba(96, 165, 250,0);
-     --pic-border: rgba(96, 165, 250,1);
-     --border-color: var(--non-pic-border);
-      
+    :root {
+      --non-pic-border: rgba(96, 165, 250, 0);
+      --pic-border: rgba(96, 165, 250, 1);
+      --border-color: var(--non-pic-border);
     }
+
     #detail {
       box-sizing: content-box;
       width: 45%;
     }
-    .pic-border{
+
+    .pic-border {
       /* border-2 border-blue-400 */
-      border-width: 2px ;
+      border-width: 2px;
       border-color: var(--border-color);
     }
-
-
   </style>
-
-
 </head>
 
 <body>
-  <div id="app" class="font-sans-serif font-light text-black ">
-
+  <div id="app" class="font-sans-serif font-light text-black">
     <div id="nav-bar" class="text-lg flex flex-row flex justify-center flex justify-around m-0.5 mx-36 cursor-pointer">
-      <div class="border-t border-black text-center hover:text-gray-400 hover:border-white p-5 px-12">Sneakers List
+      <div class="border-t border-black text-center hover:text-gray-400 hover:border-white p-5 px-12">
+        Sneakers List
       </div>
-      <div class="border-t border-black text-center hover:text-gray-400 hover:border-white p-5 px-12">เกี่ยวกับเรา</div>
-      <div class="border-t border-black text-center hover:text-gray-400 hover:border-white p-5 px-12">ติดต่อเรา</div>
-      <div class="border-t border-black text-center hover:text-gray-400 hover:border-white p-5 px-12">FAQ</div>
-      <div class="border-t border-black text-center hover:text-gray-400 hover:border-white p-5 px-12">เลขพัสดุ-</div>
-      <div class="border-t border-black text-center hover:text-gray-400 hover:border-white p-5 px-12 ">Sale</div>
+      <div class="border-t border-black text-center hover:text-gray-400 hover:border-white p-5 px-12">
+        เกี่ยวกับเรา
+      </div>
+      <div class="border-t border-black text-center hover:text-gray-400 hover:border-white p-5 px-12">
+        ติดต่อเรา
+      </div>
+      <div class="border-t border-black text-center hover:text-gray-400 hover:border-white p-5 px-12">
+        FAQ
+      </div>
+      <div class="border-t border-black text-center hover:text-gray-400 hover:border-white p-5 px-12">
+        เลขพัสดุ-
+      </div>
+      <div class="border-t border-black text-center hover:text-gray-400 hover:border-white p-5 px-12">
+        Sale
+      </div>
     </div>
 
     <div id="logo" class="mx-auto w-12 cursor-pointer m-5">
@@ -62,96 +69,86 @@
     </div>
 
     <div id="brand" class="flex justify-center text-2xl text-black font-semibold tracking-widest cursor-pointer">
-      <p> SWEETCLASSIC.COM </p>
+      <p>SWEETCLASSIC.COM</p>
     </div>
 
-
-    <div id="product" class="font-serif pl-48 text-sm  italic ">
-      <p class="py-16 pt-20">Home /
+    <div id="product" class="font-serif pl-48 text-sm italic">
+      <p class="py-16 pt-20">
+        Home /
         <span class="text-gray-400">NIKE AIR FORCE 1 '07 "TRIPLE WHITE"</span>
       </p>
-      <div id="pictures" class="flex flex-row  ">
-        <div id="main-pic" class=" w-1/2">
-          <img src="images/nk-1.jpg" id="mainpic" class=" pr-8 pb-2 " />
-          <div id="prev-pic" class=" flex flex-row space-x-3 pl-0 pb-5 pt-2 mx-7 ">
-            <img src="images/nk-1.jpg" id="pic1"   class=" inline-block w-12 h-12 pic-border" />
-            <img src="images/nk-2.png" id="pic2"  class=" inline-block w-12 h-12 pic-border" />
-            <img src="images/nk-3.png" id="pic3"  class="inline-block w-12 h-12 pic-border"/>
-            <img src="images/nk-4.png" id="pic4"  class="inline-block w-12 h-12 pic-border"/>
-            <img src="images/nk-5.png" id="pic5"  class="inline-block w-12 h-12 pic-border"/>
-            <img src="images/nk-6.png" id="pic6"  class="inline-block w-12 h-12 pic-border" />
+      <div id="pictures" class="flex flex-row">
+        <div id="main-pic" class="w-1/2">
+          <img src="images/nk-1.jpg" id="mainpic" class="pr-8 pb-2" />
+          <div id="prev-pic" class="flex flex-row space-x-3 pl-0 pb-5 pt-2 mx-7">
+            <img src="images/nk-1.jpg" id="pic1" class="inline-block w-12 h-12 pic-border" />
+            <img src="images/nk-2.png" id="pic2" class="inline-block w-12 h-12 pic-border" />
+            <img src="images/nk-3.png" id="pic3" class="inline-block w-12 h-12 pic-border" />
+            <img src="images/nk-4.png" id="pic4" class="inline-block w-12 h-12 pic-border" />
+            <img src="images/nk-5.png" id="pic5" class="inline-block w-12 h-12 pic-border" />
+            <img src="images/nk-6.png" id="pic6" class="inline-block w-12 h-12 pic-border" />
           </div>
         </div>
 
-        <div id="content" class="  flex space-x-14 items-start ">
+        <div id="content" class="flex space-x-14 items-start">
           <div id="info">
-            <p class="text-xl"> NIKE AIR FORCE 1'07 "TRIPLE WHITE"</p>
-            <p class="text-xl py-7"> ฿3,500 </p>
+            <p class="text-xl">NIKE AIR FORCE 1'07 "TRIPLE WHITE"</p>
+            <p class="text-xl py-7">฿3,500</p>
             <p class="pb-2">Quantity</p>
             <input id="q-input" name="quantity" type="number" min="0" max="999" placeholder="1"
-              class="border border-black w-20 h-12 text-xl pl-2 ">
-            <div id="add-btn" class="  p-2 text-center m-7 ml-0 bg-yellow-300 hover:bg-yellow-200 cursor-pointer">
-              <button class="italic text-white  ">Add to Cart</button>
+              class="border border-black w-20 h-12 text-xl pl-2" />
+            <div id="add-btn" class="p-2 text-center m-7 ml-0 bg-yellow-300 hover:bg-yellow-200 cursor-pointer">
+              <button class="italic text-white">Add to Cart</button>
             </div>
-            <div id="social " class=" flex flex-row flex space-x-6 p-7 pl-0 cursor-pointer">
-              <div id="whatsapp" class=" w-4 h-4 ">
+            <div id="social " class="flex flex-row flex space-x-6 p-7 pl-0 cursor-pointer">
+              <div id="whatsapp" class="w-4 h-4">
                 <img src="images/social/whatsapp.png" />
               </div>
-              <div id="facebook" class=" w-4 h-4 ">
+              <div id="facebook" class="w-4 h-4">
                 <img src="images/social/facebook.png" />
               </div>
-              <div id="twitter" class=" w-4 h-4 ">
+              <div id="twitter" class="w-4 h-4">
                 <img src="images/social/twitter.png" />
               </div>
-              <div id="pinterest" class=" w-4 h-4 ">
+              <div id="pinterest" class="w-4 h-4">
                 <img src="images/social/pinterest.png" />
               </div>
-
             </div>
-
           </div>
-
-
-
-
-
-
         </div>
-
-
-
       </div>
-      <div id="detail" class=" box-content w-5/12 ">
-        <p>NIKE AIR FORCE 1 '07 "TRIPLE WHITE"<br>
-          SIZE(EURO): 36 / 36.5 / 37.5 / 38 / 38.5 / 39 / 40 <br>
-          ราคา : 3,500 บาท<br>
+      <div id="detail" class="box-content w-5/12">
+        <p>
+          NIKE AIR FORCE 1 '07 "TRIPLE WHITE"<br />
+          SIZE(EURO): 36 / 36.5 / 37.5 / 38 / 38.5 / 39 / 40 <br />
+          ราคา : 3,500 บาท<br />
         </p>
         <p>
-          . <br>
-          รองเท้าไนกี้สปอร์ตแวร์ในตำนานอย่าง AIR FORCE 1 ปี 2007 กลับมาอีกครั้งนะครับ ด้วยรูปทรงที่ลงตัว,
-          น้ำหนักที่เบาลงไปกว่าโมเดล ปี 82,
-          ซัพพอร์ตเทคโนโลยี AIR เต็มเท้า, Dubrae AF-1 วัสดุโลหะของปี 1982 สุดคลาสสิค และสีขาวล้วนที่เป็นไอคอนของโมเดล
-          ทำให้รองเท้าคู่นี้พิเศษกว่าไนกี้รุ่นอื่นๆ
-          และเป็นที่นิยมตลอดกาล โดยในโมเดลที่มีวางจำหน่ายนี้เราจะมีแค่ไซส์เล็กๆอย่าง 36-40 นะครับ
-          เพื่อนๆที่ตามหากันอยู่
-          ห้ามพลาดครับ <br>
-          . <br>
-          สินค้ามีวางจำหน่ายแล้วที่หน้าร้าน Inside Sports ชั้น 2 MBK Center สำหรับเพื่อนๆที่ไม่สะดวกหน้าร้าน
-          เราจัดส่งด่วนถึงบ้านตามปกติครับ 🙂
-          #nike #nikesportswear #nsw #af1 #triplewhite #sweetclassicbkkbr <br>
-          ----------------------- <br>
-          ดูสินค้าใหม่ๆได้ง่ายๆแล้ววันนี้ที่ <br>
+          . <br />
+          รองเท้าไนกี้สปอร์ตแวร์ในตำนานอย่าง AIR FORCE 1 ปี 2007
+          กลับมาอีกครั้งนะครับ ด้วยรูปทรงที่ลงตัว, น้ำหนักที่เบาลงไปกว่าโมเดล
+          ปี 82, ซัพพอร์ตเทคโนโลยี AIR เต็มเท้า, Dubrae AF-1 วัสดุโลหะของปี
+          1982 สุดคลาสสิค และสีขาวล้วนที่เป็นไอคอนของโมเดล
+          ทำให้รองเท้าคู่นี้พิเศษกว่าไนกี้รุ่นอื่นๆ และเป็นที่นิยมตลอดกาล
+          โดยในโมเดลที่มีวางจำหน่ายนี้เราจะมีแค่ไซส์เล็กๆอย่าง 36-40 นะครับ
+          เพื่อนๆที่ตามหากันอยู่ ห้ามพลาดครับ <br />
+          . <br />
+          สินค้ามีวางจำหน่ายแล้วที่หน้าร้าน Inside Sports ชั้น 2 MBK Center
+          สำหรับเพื่อนๆที่ไม่สะดวกหน้าร้าน เราจัดส่งด่วนถึงบ้านตามปกติครับ 🙂
+          #nike #nikesportswear #nsw #af1 #triplewhite #sweetclassicbkkbr
+          <br />
+          ----------------------- <br />
+          ดูสินค้าใหม่ๆได้ง่ายๆแล้ววันนี้ที่ <br />
           https://www.sweetclassic.com/
         </p>
       </div>
       <div id="footer" class="border-t border-black p-12 pl-0 pb-1 m-0 mt-24">
         <p>© 2017 SWEETCLASSIC. an INSIDE SPORTS COMPANY.</p>
       </div>
-
     </div>
 
-  </div>
 
+  </div>
   <!-- my main.js -->
   <script src="main.js"></script>
 </body>
